@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome 英文网页翻译插件",
+  "version": "0.1.0",
+  "description": "提取英文网页文章并翻译为中文",
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_title": "英文网页翻译",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background/index.ts",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab", "scripting", "storage"]
+}
