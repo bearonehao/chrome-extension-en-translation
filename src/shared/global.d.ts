@@ -1,0 +1,12 @@
+/**
+ * turndown-plugin-gfm 的类型声明（该库未提供官方类型）
+ */
+declare module 'turndown-plugin-gfm' {
+  import type TurndownService from 'turndown';
+
+  export function gfm(service: TurndownService): void;
+  export function tables(service: TurndownService): void;
+  export function strikethrough(service: TurndownService): void;
+  export function taskListItems(service: TurndownService): void;
+  export function highlightedCodeBlock(service: TurndownService): void;
+}
